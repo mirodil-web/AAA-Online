@@ -7,3 +7,9 @@
         @apply w-full max-w-[1240px] px-5 mx-auto
     }
 }
+
+::selection{
+    background-color: #362ABD;
+    border-radius: 5%;
+    color: lightgrey;
+}

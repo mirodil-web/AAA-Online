@@ -5,7 +5,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        'brndcolor': '#362ABD',
+        'textColor': '#2B2B2B',
+      },
+      backgroundColor: {
+        'mainBg': '#F7F6F9'
+      },
+      backgroundImage: {
+        'heroBg': "url('/public/assets/herobg.png')"
+      }
+    },
   },
   plugins: [],
-}
+};

@@ -6,19 +6,22 @@ import {
   Route
 } from "react-router-dom";
 import PageNotFound from "./pages/PageNotFound";
+import RootLayouts from "./layouts/RootLayouts";
+import Home from "./pages/Home";
 
 const App = () => {
 
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' >
+      <Route path='/' element={<RootLayouts />} >
+        <Route index  element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     )
   )
   return (
     <div>
-      <div className=''>
+      <div className='bg-mainBg font-roboto'>
         <RouterProvider router={routes} />
       </div>
     </div>
